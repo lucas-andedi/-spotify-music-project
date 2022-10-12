@@ -31,8 +31,9 @@ const TopChartCard = ({ song , i , isPlaying , activeSong , handlePauseClick , h
       song={song}
       handlePause={handlePauseClick}
       handlePlay={handlePlayClick}
-    />
-  
+    >
+
+    </PlayPause>
   </div>
 )
 
@@ -57,7 +58,7 @@ const TopPlay = () => {
     dispatch(playPause(false));
   }
 
-  const handlePlayClick = ( song ,i)=> {
+  const handlePlayClick = ()=> {
     dispatch(setActiveSong({ song , data , i}));
     dispatch(playPause(true));
   };
@@ -82,7 +83,7 @@ const TopPlay = () => {
                 isPlaying={isPlaying}
                 activeSong={activeSong}
                 handlePauseClick={handlePauseClick}
-                handlePlay={() => handlePlayClick(song , i)}
+                handlePlay={handlePlayClick}
 
                  />
               ))
