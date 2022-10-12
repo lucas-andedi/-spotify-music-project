@@ -80,14 +80,7 @@ const TopPlay = () => {
               modules={[FreeMode]}
               className="mt-4"
             >
-              { 
-                topPlays?.map((song ,i) => (
-                <SwiperSlide
-                key={song?.key}
-                style={{width: '25%' , height: 'auto'}}
-                className="shadow-lg rounded-full animate-slideright" 
-                />
-              ))
+              { topPlays
 
               }
             </Swiper>
