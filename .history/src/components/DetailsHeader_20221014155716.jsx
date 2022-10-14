@@ -16,20 +16,12 @@ return (
       <div className='ml-5'>
         <p className='font-bold text-white sm:text-3xl text-xl'>{artistId ? artist?.name : songData?.title}</p>
         { !artistId && (
-          <Link to={`/artists/${songData?.artists[0].adamid}`}>
+          <Link >
             <p className='text-base text-gray-400 mt-2'>{songData?.subtitle}</p>
           </Link>
         )}
-
-        <p className="text-base text-gray-400 mt-2">
-          {artistId
-          ? artist?.genreNames[0]
-          : songData?.genres?.primary}
-        </p>
       </div>
     </div>
-
-    <div className='w-full sm:h-44 h-24'/>
       </div>
   </div>
 )
