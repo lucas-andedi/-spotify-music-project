@@ -20,7 +20,7 @@ const SongDetails = () => {
         dispatch(playPause(false));
       }
     
-      const handlePlayClick = ( song , i)=> {
+      const handlePlayClick = ( song)=> {
         dispatch(setActiveSong({ song , data , i}));
         dispatch(playPause(true));
       }

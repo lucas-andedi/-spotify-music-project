@@ -21,5 +21,5 @@ export const shazamCoreApi = createApi({
 });
 
 export const { useGetTopChartsQuery , useGetSongDetailsQuery ,
-useGetSongRelatedQuery
+useGetSongQuery
  } = shazamCoreApi;

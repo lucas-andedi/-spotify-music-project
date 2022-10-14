@@ -16,7 +16,7 @@ const RelatedSongs = ({ data ,isPlaying,active,handlePauseClick,handlePlayClick 
       activeSong={activeSong}
       handlePauseClick={handlePauseClick}
       handlePlayClick={handlePlayClick}
-    
+    }
       />
     ))}
     </div>
